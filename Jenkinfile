@@ -1,0 +1,19 @@
+Create Jenkinfilepipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'This is build an app'
+                echo 'This is test an app'
+                echo 'This is deploy an app'
+            }
+        }
+    }
+}
+post{
+      always
+   emailtext body: 'Summary', replyto:'emailid',subject:'pipe Notify',to:'emalid'
+    }
+   }
+  }
