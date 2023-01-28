@@ -1,4 +1,5 @@
-Create Jenkinfilepipeline {
+Create Jenkinfile(Declarative Pipeline)
+pipeline {
     agent any
 
     stages {
